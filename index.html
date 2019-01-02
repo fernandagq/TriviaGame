@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Trivia!</title>
+        <title> Tweet Trivia </title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="styesheet" href="./assets/css/style.css">
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -14,121 +14,160 @@
             <input class=startButton type="button" value="start">
         </div>
         <div class="endScreen" style="display:none">
-                <h1>Totally Trivial Trivia</h1>
+                <h1>Celebrity Tweet Trivia</h1>
                 <br><br>
                 <h2> All Done!</h2>
                 <br>
                 <h3 id="correct"> Correct Answers: </h3>
                 <h3 id="incorrect"> Incorrect Answers: </h3>
                 <h3 id="unanswered"> Unanswered: </h3>
-                <input class="startButton" type="button" value="playAgain">
+                <input class="startButton" type="button" value="Restart">
             </div>
             <div id="gamePlay" width="600" height="450" style="display:none; border:solid orange;">
                     <div id="counter"></div>
-                    <h2 class="lead"> Inside which HTML element do we put JavaScript? </h2>
+                    <h2 class="lead"> "Oh God. I just realized I'm stuck with me my whole life." </h2>
                     <div>
-                        <input type="radio" id="scripting" name="questionOne" value="scripting"><label for="scripting">scripting</label>
+                        <input type="radio" id="annaKendrick" name="questionOne" value="annaKendrick" class="radioButton"><label for="annaKendrick">Anna Kendrick</label>
                     </div>
                     <div>
-                        <input type="radio" id="script" name="questionOne" value="script"><label for="script">script</label>
+                        <input type="radio" id="justinBieber" name="questionOne" value="justinBieber" class="radioButton"><label for="justinBieber">Justin Bieber</label>
                     </div>
                     <div>
-                        <input type="radio" id="js" name="questionOne" value="script"><label for="js">js</label>
+                        <input type="radio" id="arianaGrande" name="arianaGrande" value="arianaGrande" class="radioButton"><label for="arianaGrande">Ariana Grande</label>
                     </div>
                     <div>
-                        <input type="radio" id="javascript" name="questionOne" value="javascript"><label for="javascript">javascript</label>
+                        <input type="radio" id="katyPerry" name="questionOne" value="katyPerry" class="radioButton"><label for="katyPerry">Katy Perry</label>
                     </div>
-                    <h2 class="lead"> Inside which HTML element do we put JavaScript? </h2>
+
+                    <h2 class="lead"> "How can mirrors be real if our eyes aren't real?" </h2>
                     <div>
-                        <input type="radio" id="scripting" name="questionOne" value="scripting"><label for="scripting">scripting</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="script" name="questionOne" value="script"><label for="script">script</label>
+                        <input type="radio" id="jojoSiwa" name="questionTwo" value="jojoSiwa" class="radioButton"><label for="jojoSiwa"> Jojo Siwa </label>
                     </div>
                     <div>
-                        <input type="radio" id="js" name="questionOne" value="script"><label for="js">js</label>
+                        <input type="radio" id="kylieJenner" name="questionTwo" value="kylieJenner" class="radioButton"><label for="kylieJenner"> Kylie Jenner </label>
                     </div>
                     <div>
-                        <input type="radio" id="javascript" name="questionOne" value="javascript"><label for="javascript">javascript</label>
-                    </div>
-                    <h2 class="lead"> Inside which HTML element do we put JavaScript? </h2>
-                    <div>
-                        <input type="radio" id="scripting" name="questionOne" value="scripting"><label for="scripting">scripting</label>
+                        <input type="radio" id="kanyeWest" name="questionTwo" value="kanyeWest" class="radioButton"><label for="kanyeWest">Kanye West</label>
                     </div>
                     <div>
-                        <input type="radio" id="script" name="questionOne" value="script"><label for="script">script</label>
+                        <input type="radio" id="jadenSmith" name="questionTwo" value="jadenSmith" class="radioButton"><label for="jadenSmith">Jaden Smith</label>
+                    </div>
+
+                    <h2 class="lead"> "Was rushin to take a dump and got caught behind a school bus droppin kids off!! longest 30mins of my lifffeeee!!"</h2>
+                    <div>
+                        <input type="radio" id="daveChappelle" name="questionThree" value="daveChappelle" class="radioButton"><label for="daveChappelle">Dave Chappelle</label>
                     </div>
                     <div>
-                        <input type="radio" id="js" name="questionOne" value="script"><label for="js">js</label>
+                        <input type="radio" id="lilJon" name="questionThree" value="lilJon" class="radioButton"><label for="lilJon">Lil Jon</label>
                     </div>
                     <div>
-                        <input type="radio" id="javascript" name="questionOne" value="javascript"><label for="javascript">javascript</label>
-                    </div>
-                    <h2 class="lead"> Inside which HTML element do we put JavaScript? </h2>
-                    <div>
-                        <input type="radio" id="scripting" name="questionOne" value="scripting"><label for="scripting">scripting</label>
+                        <input type="radio" id="kristenBell" name="questionThree" value="kristenBell" class="radioButton"><label for="kristenBell">Kristen Bell</label>
                     </div>
                     <div>
-                        <input type="radio" id="script" name="questionOne" value="script"><label for="script">script</label>
+                        <input type="radio" id="ashtonKutcher" name="questionThree" value="ashtonKutcher" class="radioButton"><label for="ashtonKutcher">Ashton Kutcher</label>
+                    </div>
+
+                    <h2 class="lead"> "I'm not saying I'm tired PER SE, but I just bumped into a wall and apologized to it #NotKidding" </h2>
+                    <div>
+                        <input type="radio" id="robLowe" name="questionFour" value="robLowe" class="radioButton"><label for="robLowe">Rob Lowe</label>
                     </div>
                     <div>
-                        <input type="radio" id="js" name="questionOne" value="script"><label for="js">js</label>
+                        <input type="radio" id="cardiB" name="questionFour" value="cardiB" class="radioButton"><label for="cardiB">Cardi B</label>
                     </div>
                     <div>
-                        <input type="radio" id="javascript" name="questionOne" value="javascript"><label for="javascript">javascript</label>
-                    </div>
-                    <h2 class="lead"> Inside which HTML element do we put JavaScript? </h2>
-                    <div>
-                        <input type="radio" id="scripting" name="questionOne" value="scripting"><label for="scripting">scripting</label>
+                        <input type="radio" id="ryanReynolds" name="questionFour" value="ryanReynolds" class="radioButton"><label for="ryanReynolds">Ryan Reynolds</label>
                     </div>
                     <div>
-                        <input type="radio" id="script" name="questionOne" value="script"><label for="script">script</label>
+                        <input type="radio" id="kimKardashian" name="questionFour" value="kimKardashian" class="radioButton"><label for="kimKardashian">Kim Kardashian</label>
+                    </div>
+
+                    <h2 class="lead"> "I watched this episode of 30 Rock live and I was like "am I that high or did Kenneth just say my name." As it turns out, both were true."</h2>
+                    <div>
+                        <input type="radio" id="jonahHill" name="questionFive" value="jonahHill" class="radioButton"><label for="jonahHill">Jonah Hill</label>
                     </div>
                     <div>
-                        <input type="radio" id="js" name="questionOne" value="script"><label for="js">js</label>
+                        <input type="radio" id="sethRogan" name="questionFive" value="sethRogan" class="radioButton"><label for="sethRogan">Seth Rogan</label>
                     </div>
                     <div>
-                        <input type="radio" id="javascript" name="questionOne" value="javascript"><label for="javascript">javascript</label>
-                    </div>
-                    <h2 class="lead"> Inside which HTML element do we put JavaScript? </h2>
-                    <div>
-                        <input type="radio" id="scripting" name="questionOne" value="scripting"><label for="scripting">scripting</label>
+                        <input type="radio" id="zachBraff" name="questionFive" value="zachBraff" class="radioButton"><label for="zachBraff">Zach Braff</label>
                     </div>
                     <div>
-                        <input type="radio" id="script" name="questionOne" value="script"><label for="script">script</label>
+                        <input type="radio" id="michaelCera" name="questionFive" value="michaelCera" class="radioButton"><label for="michaelCera">Michael Cera</label>
+                    </div>
+
+                    <h2 class="lead"> "Is there an emoji for crying in the fetal position whilst eating pizza? Asking for a friend" </h2>
+                    <div>
+                        <input type="radio" id="christinaApplegate" name="questionSix" value="christinaApplegate" class="radioButton"><label for="christinaApplegate">Christina Applegate</label>
                     </div>
                     <div>
-                        <input type="radio" id="js" name="questionOne" value="script"><label for="js">js</label>
+                        <input type="radio" id="mindyKaling" name="questionSix" value="mindyKaling" class="radioButton"><label for="mindyKaling">Mindy Kaling</label>
                     </div>
                     <div>
-                        <input type="radio" id="javascript" name="questionOne" value="javascript"><label for="javascript">javascript</label>
-                    </div>
-                    <h2 class="lead"> Inside which HTML element do we put JavaScript? </h2>
-                    <div>
-                        <input type="radio" id="scripting" name="questionOne" value="scripting"><label for="scripting">scripting</label>
+                        <input type="radio" id="williamShatner" name="questionSix" value="williamShatner" class="radioButton"><label for="williamShatner">William Shatner</label>
                     </div>
                     <div>
-                        <input type="radio" id="script" name="questionOne" value="script"><label for="script">script</label>
+                        <input type="radio" id="none" name="questionSix" value="none" class="radioButton"><label for="none">None of the above</label>
+                    </div>
+
+                    <h2 class="lead"> Waitress: Any questions about the menu? </h2>
+                    <h2 class="lead">Me: is this font "Verdana?"</h2>
+                    <div>
+                        <input type="radio" id="jennaFischer" name="questionSeven" value="jennaFischer" class="radioButton"><label for="jennaFischer">Jenna Fischer</label>
                     </div>
                     <div>
-                        <input type="radio" id="js" name="questionOne" value="script"><label for="js">js</label>
+                        <input type="radio" id="johnKrasinski" name="questionSeven" value="johnKrasinski" class="radioButton"><label for="johnKrasinski">John Krasinski</label>
                     </div>
                     <div>
-                        <input type="radio" id="javascript" name="questionOne" value="javascript"><label for="javascript">javascript</label>
-                    </div>
-                    <h2 class="lead"> Inside which HTML element do we put JavaScript? </h2>
-                    <div>
-                        <input type="radio" id="scripting" name="questionOne" value="scripting"><label for="scripting">scripting</label>
+                        <input type="radio" id="steveCarell" name="questionSeven" value="steveCarell" class="radioButton"><label for="steveCarell">Steve Carell</label>
                     </div>
                     <div>
-                        <input type="radio" id="script" name="questionOne" value="script"><label for="script">script</label>
+                        <input type="radio" id="rainnWilson" name="questionSeven" value="rainnWilson" class="radioButton"><label for="rainnWilson">Rainn Wilson</label>
+                    </div>
+
+                    <h2 class="lead"> A cute girl once said hi to me at a friend's BBQ. I got so nervous I just nodded and said. "Cap'n," back at her. #WhyImSingle  </h2>
+                    <div>
+                        <input type="radio" id="willFerrell" name="questionEight" value="willFerrell" class="radioButton"><label for="willFerrell">Will Ferrell</label>
                     </div>
                     <div>
-                        <input type="radio" id="js" name="questionOne" value="script"><label for="js">js</label>
+                        <input type="radio" id="kevinHart" name="questionEight" value="kevinHart" class="radioButton"><label for="kevinHart">Kevin Hart</label>
                     </div>
                     <div>
-                        <input type="radio" id="javascript" name="questionOne" value="javascript"><label for="javascript">javascript</label>
+                        <input type="radio" id="azizAnsari" name="questionEight" value="azizAnsari" class="radioButton"><label for="azizAnsari">Aziz Ansari</label>
                     </div>
+                    <div>
+                        <input type="radio" id="jimmyFallon" name="questionEight" value="jimmyFallon" class="radioButton"><label for="jimmyFallon">Jimmy Fallon</label>
+                    </div>
+
+                    <h2 class="lead"> "I don't need to buy anything on Black Friday, I just want to get in a fistfight at Bed Bath and Beyond to feel alive." </h2>
+                    <div>
+                        <input type="radio" id="conan" name="questionNine" value="conan" class="radioButton"><label for="conan">Conan O'Brien</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="cole" name="questionNine" value="cole" class="radioButton"><label for="cole">Cole M. Sprouse</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="sarah" name="questionNine" value="sarah" class="radioButton"><label for="sarah">Sarah Silverman</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="khloe" name="questionNine" value="khloe" class="radioButton"><label for="khloe">Khloe Kardashian</label>
+                    </div>
+
+                    <h2 class="lead"> "I wish I was as good at anything else as I am at accidentally turning on my phone's flashlight." </h2>
+                    <div>
+                        <input type="radio" id="mark" name="questionTen" value="mark" class="radioButton"><label for="mark">Mark Hamill</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="julie" name="questionTen" value="julie" class="radioButton"><label for="julie">Julie Klausner</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="chris" name="questionTen" value="chris" class="radioButton"><label for="chris">Chris Kelly</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="joseph" name="questionTen" value="joseph" class="radioButton"><label for="joseph">Joseph Gordon-Levitt</label>
+                    </div>
+
+                    
+                    <p><input type="button" value="Submit" id="Submit"></p>
                 </div>
             </div>
             <script src="./assets/javascript/app.js"></script>
