@@ -3,17 +3,18 @@
     <head>
         <title> Tweet Trivia </title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="styesheet" href="./assets/css/style.css">
+        <link rel="styesheet" type="text/css" href="./assets/css/style.css">
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     <body>
         <div
         class="container">
-        <div class="startScreen">
-            <h1>Trivia</h1>
+        <div class="startScreen" style="width:600px; height:700px; border: solid pink; margin:30px;">
+            <h1>Celebrity Tweet Trivia</h1>
+        <br><br>
             <input class=startButton type="button" value="start">
         </div>
-        <div class="endScreen" style="display:none">
+        <div class="endScreen" style="display:none; width:600px; height:700px; border: solid pink; margin:30px;">
                 <h1>Celebrity Tweet Trivia</h1>
                 <br><br>
                 <h2> All Done!</h2>
@@ -21,9 +22,10 @@
                 <h3 id="correct"> Correct Answers: </h3>
                 <h3 id="incorrect"> Incorrect Answers: </h3>
                 <h3 id="unanswered"> Unanswered: </h3>
-                <input class="startButton" type="button" value="Restart">
+                <input class="restartButton" type="button" value="Restart">
             </div>
-            <div id="gamePlay" width="600" height="450" style="display:none; border:solid orange;">
+            <div id="gamePlay" width="600" height="450" style="display:none; border:solid orange; padding:30px; margin:30px;">
+                <h1>Celebrity Tweet Trivia</h1>
                     <div id="counter"></div>
                     <h2 class="lead"> "Oh God. I just realized I'm stuck with me my whole life." </h2>
                     <div>

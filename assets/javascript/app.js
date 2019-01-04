@@ -1,4 +1,5 @@
 // 1. Create a function that initiates game upon the click of the "start" button. 
+function startGame(){}
 $(".startButton").on("click", function () {
     // if user clicks "start" begin game.
     initTimer();
@@ -6,10 +7,16 @@ $(".startButton").on("click", function () {
     $(".startScreen").hide();
     $(".endScreen").hide();
     $("#gamePlay").show();
+    correctAnswers=0;
+    incorrectAnswers=0;
+    unanswered=0;
 });
 // Create a timer.
 var time= 120;
 var intervalId;
+var newCorrect = $("#correct");
+var newIncorrect= $("#incorrect");
+var unanswered= $("#unansweredOne");
 
 function initTimer() {
     
@@ -229,4 +236,10 @@ var unanswered=0;
             $("#incorrect").append(incorrectAnswers);
             $("#unanswered").append(unanswered);
         
+        });
+
+        
+        $(".restartButton").on("click", function () {
+            location.reload();
+           
         });
